@@ -2,14 +2,25 @@
 
 /*March 2018*/
 
+/*Reset*/
 body, header, footer {
+  display: flex;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  display: block;
+
+}
+
+
+body {
+  text-align: center;
+height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
 }
 
 .container {
@@ -17,24 +28,15 @@ body, header, footer {
 		margin-right: auto;
 	}
 
-body {
-  display: flex;
-  text-align: center;
-
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
-}
-
 #header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   padding: 6em 3em 3em 3em;
   width: 30%;
-  height: 80%;
+  min-height: 100%;
   position: fixed;
   text-align: right;
-  /*align-items: center;*/
   justify-content: space-between;
   background-image: url();
   background-image: linear-gradient(45deg, #192A52, #495B84);
@@ -84,7 +86,7 @@ a {
   flex-wrap: wrap;
   align-content: flex-end;
   /*flex-direction: row;*/
-  padding: 3em 0 3em 3em;
+  padding: 3em 0 0 3em;
   align-items: flex-end;
   position: relative;
   text-align: right;
