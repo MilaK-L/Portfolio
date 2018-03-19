@@ -119,17 +119,15 @@ ul {
   vertical-align: baseline;
 }
 
-
 ul.social.icons li {
   display: inline-block;
   padding: 0 0 0 1em;
 }
 
-
 #main {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: inherit;
   margin-left: 35%;
   max-width: 54em;
   padding: 6em 2em 2em 0;
@@ -137,28 +135,31 @@ ul.social.icons li {
   background-color: #FADC9E;
 }
 
-#main > section {
-			border-top: solid 2px #c2d3f9;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
-		}
+#main>section {
+  border-top: solid 2px #c2d3f9;
+  margin: 4em 0 0 0;
+  padding: 4em 0 0 0;
+}
 
-#main > section:first-child {
-  				border-top: 0;
-  				margin-top: 0;
-  				padding-top: 0;
-  			}
+#main>section:first-child {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
 
 .about {
   background-color: #C06C84;
   /*flex-basis: content;*/
+  align-items: flex-start;
 }
+
 .work {
   background-color: #51ADCF;
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
   flex: 1;
- /*flex-basis: content;*/
+  align-items: flex-start;
+  /*flex-basis: content;*/
 }
 
 .projects {
@@ -167,20 +168,20 @@ ul.social.icons li {
   flex-direction: row;
   align-content: stretch;
   /*flex-basis: content;*/
-
 }
 
 .contact {
   background-color: #669B7C;
   /*flex-basis: content;*/
+  align-items: flex-start;
 }
 
-#main > section:first-child {
+#main>section:first-child {
   flex-direction: column;
-
 }
 
 section, article {
   flex-basis: content;
- flex: 1;
+  flex: 1;
+  align-items: flex-start;
 }
