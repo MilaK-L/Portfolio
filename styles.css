@@ -81,30 +81,49 @@ body {
 
 a {
   text-decoration: none;
+  color: #a2a2a2;
 }
 
 a:hover {
-  color: #49bf9d !important;
+  color: #F6C90E !important;
   text-decoration: none;
+}
+
+p {
+  margin: 0 0 2em 0;
+}
+
+h1, h2, h3 {
+  color: #787878;
+  font-weight: 600;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+}
+
+article>p {
+  font-size: 0.9em;
+  margin-top: -0.8em;
+  line-height: 1.5em;
 }
 
 #footer {
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  /*flex-direction: row;*/
+  /*flex-wrap: wrap;*/
+  /*align-content: flex-end;*/
+  flex-direction: row;
   padding: 3em 0 0 3em;
-  align-items: flex-end;
+  /*align-items: flex-end;*/
   position: relative;
   text-align: right;
   align-self: flex-end;
   margin: 0;
 }
 
+/*
 .footer.wrapper {
   flex-direction: row;
-  /*align-items: center;*/
 }
+*/
 
 #footer .social.icons {
   margin: 1em 0 1em 0;
@@ -161,7 +180,7 @@ ul.social.icons li {
 }
 
 .work {
-  background-color: #51ADCF;
+  background-color: #137083;
   /*display: flex;*/
   flex-direction: column;
   flex: 1;
@@ -193,9 +212,49 @@ section, article {
   align-items: flex-start;
 }
 
+/* Project images*/
+
+.image img {
+  border-radius: 0.35em;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.image.thumb {
+  text-align: center;
+}
+
+.image.thumb:hover {
+  background: url("images/overlay.png");
+  opacity: 0.5;
+  border-radius: 0.35em;
+}
+
+/*.image.thumb:hover::after {
+  background: url("images/overlay.png");
+  border-radius: 0.35em;
+  transition: opacity 0.2s ease-in-out;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  color: #fff;
+  content: "Learn more";
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 400;
+  left: 50%;
+  line-height: 2.25em;
+  margin: -1.25em 0 0 -3em;
+  opacity: 0.5;
+  padding: 0 1.5em;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 50%;
+  white-space: nowrap;
+}*/
+
+
+
 input, textarea, button {
   background-color: #f7f7f7;
-  ;
   border: solid 2px transparent;
   border-radius: 0.35em;
   display: block;
@@ -204,11 +263,21 @@ input, textarea, button {
   text-decoration: none;
   text-transform: none;
   font-size: 12pt;
+  color: #a2a2a2;
   line-height: 1.75em;
+  height: 2.75em;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus, button:focus, button:hover {
-  border-color: #49bf9d;
+  border-color: #F6C90E;
+}
+
+form {
+  margin: 0 0 2em 0;
+}
+
+textarea {
+  padding: 0.75em;
 }
 
 .get_in_touch {
