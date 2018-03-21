@@ -4,7 +4,7 @@
 
 /*Reset*/
 
-body, header, footer {
+body, header, footer, button, input, textarea {
   display: flex;
   box-sizing: border-box;
   margin: 0;
@@ -185,4 +185,16 @@ section, article {
   flex-basis: content;
   flex: 1;
   align-items: flex-start;
+}
+
+input, textarea, button {
+  background-color: #f7f7f7;;
+  border: solid 2px transparent;
+  border-radius: 0.35em;
+  display: block;
+  outline: 0;
+  padding: 0 0.75em;
+  text-decoration: none;
+  text-transform: none;
+  
 }
