@@ -2,7 +2,7 @@
 
 /*March 2018*/
 
-/*Reset*/
+/*Reset default styling*/
 
 body, header, footer, button, input, textarea {
   display: flex;
@@ -19,7 +19,9 @@ body {
   text-align: left;
   height: 100vh;
   font-family: 'Quicksand', sans-serif;
+  font-size: 12pt;
   font-weight: 300;
+  color: #a2a2a2;
 }
 
 .container {
@@ -81,6 +83,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #49bf9d !important;
+  text-decoration: none;
+}
+
 #footer {
   display: flex;
   flex-wrap: wrap;
@@ -101,7 +108,6 @@ a {
 
 #footer .social.icons {
   margin: 1em 0 1em 0;
-
 }
 
 .icon {
@@ -188,7 +194,8 @@ section, article {
 }
 
 input, textarea, button {
-  background-color: #f7f7f7;;
+  background-color: #f7f7f7;
+  ;
   border: solid 2px transparent;
   border-radius: 0.35em;
   display: block;
@@ -196,5 +203,22 @@ input, textarea, button {
   padding: 0 0.75em;
   text-decoration: none;
   text-transform: none;
-  
+  font-size: 12pt;
+  line-height: 1.75em;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, button:focus, button:hover {
+  border-color: #49bf9d;
+}
+
+.get_in_touch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
