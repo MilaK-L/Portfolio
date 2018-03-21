@@ -101,11 +101,12 @@ a {
 
 #footer .social.icons {
   margin: 1em 0 1em 0;
+
 }
 
 .icon {
-  width: 30px;
-  height: auto;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2em;
 }
 
 ul {
