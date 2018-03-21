@@ -171,7 +171,7 @@ ul.social.icons li {
   max-width: 54em;
   padding: 6em 2em 2em 0;
   width: calc(100% - 35%);
-  background-color: #FADC9E;
+  /*background-color: #FADC9E;*/
 }
 
 #main>section {
@@ -285,7 +285,7 @@ button {
   background-color: transparent;
   border-radius: 0.35em;
   border: solid 3px #efefef;
-  color: #787878 !important;
+  color: #787878;
   display: inline-block;
   font-weight: 400;
   height: 3.15em;
@@ -300,6 +300,10 @@ button {
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus, button:focus, button:hover {
   border-color: #F6C90E;
+}
+
+button:focus, button:hover {
+  color: #F6C90E;
 }
 
 form {
