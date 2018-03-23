@@ -57,7 +57,7 @@ body {
 
 #header .profile.image {
   margin: 0 0 1em 0;
-  width: 6.25em;
+  width: 7.25em;
 }
 
 .profile {
@@ -176,8 +176,9 @@ ul.social.icons li {
 
 #main>section {
   border-top: solid 2px #c2d3f9;
-  margin: 4em 0 0 0;
+  margin: 4em 0.8em 0 0;
   padding: 4em 0 0 0;
+  display: inline-block;
 }
 
 #main>section:first-child {
@@ -203,8 +204,9 @@ ul.social.icons li {
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-content: stretch;
   /*flex-basis: content;*/
 }
@@ -250,7 +252,6 @@ section, article {
   border-radius: 0.35em;
 }
 
-
 .preview_container:hover .image {
   opacity: 0.3;
 }
@@ -260,8 +261,8 @@ section, article {
 }
 
 .preview_container {
-    position: relative;
-    width: 50%;
+  position: relative;
+  width: auto;
 }
 
 .text {
@@ -270,8 +271,9 @@ section, article {
   color: #fff;
   font-size: 0.8em;
   font-weight: 400;
-  padding: 0 1.5em 1.5em 0;
+  padding: 0 1.5em 0 1.5em;
   line-height: 2.25em;
+  white-space: nowrap;
 }
 
 /*
