@@ -55,7 +55,7 @@ body {
   margin: 0;
 }
 
-#header .profile.image {
+#header .profile.photo {
   margin: 0 0 1em 0;
   width: 7.25em;
 }
@@ -67,15 +67,15 @@ body {
   position: relative;
 }
 
-.profile.image {
+.profile.photo {
   border-radius: 100%;
 }
 
-.profile.image:before {
+.profile.photo:before {
   display: none;
 }
 
-.profile.image img {
+.profile.photo img {
   border-radius: 100%;
   width: 100%;
 }
@@ -259,8 +259,8 @@ section, article {
   transition: opacity 0.2s ease-in-out;
   opacity: 1;
   /*display: block;*/
-  /*width: 100%;*/
-  height: auto;
+  width: 24em;
+  height: 14em;
   /*transition: .5s ease;*/
   backface-visibility: hidden;
 }
@@ -278,7 +278,7 @@ section, article {
 }
 
 .preview_container:hover .image {
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .preview_container:hover .thumb {
@@ -405,6 +405,7 @@ form {
 
 .contact_info h3 {
   margin-right: 1em;
+  width: 0.8em;
 }
 
 .row>input {
