@@ -15,19 +15,34 @@ body, header, footer, button, input, textarea {
   vertical-align: baseline;
 }
 
+/* Variables */
+
+:root {
+  --main-bg-color: #fff;
+  --link-accent-color: #F1D302;
+  /*colour: #F6CC43;*/
+  --font-color: #a2a2a2;
+  --gradient-color: linear-gradient(45deg, #155799, #159957);
+}
+
+/* Basic styles*/
+
 body {
   text-align: left;
   height: 100vh;
   font-family: 'Quicksand', sans-serif;
   font-size: 12pt;
   font-weight: 300;
-  color: #a2a2a2;
+  color: var(--font-color);
+  background-color: var(--main-bg-color);
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Header */
 
 #header {
   display: flex;
@@ -40,15 +55,16 @@ body {
   text-align: right;
   align-items: flex-end;
   justify-content: space-between;
-  background-image: url();
-  background-image: linear-gradient(45deg, #192A52, #495B84);
+  /*background-image: linear-gradient(45deg, #192A52, #495B84);*/
+  /*background: linear-gradient(45deg, #0B3142, #0F5257);*/
+  background: var(--gradient-color);
+
 }
 
 #header h1 {
   color: rgba(255, 255, 255, 0.6);
   font-family: 'Quicksand', sans-serif;
   /*font-family: 'Work Sans', sans-serif;*/
-  /*font-family: 'Hind', sans-serif;*/
   font-weight: 400;
   font-size: 1.35em;
   line-height: 1.75em;
@@ -80,25 +96,33 @@ body {
   width: 100%;
 }
 
+/* Main */
+
 a {
   text-decoration: none;
   color: #a2a2a2;
 }
 
 a:hover {
-  color: #F6C90E !important;
+  color: var(--link-accent-color) !important;
   text-decoration: none;
 }
 
 p {
   margin: 0 0 2em 0;
+  line-height: 1.55em;
 }
 
 h1, h2, h3 {
   color: #787878;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 600;
   line-height: 1em;
   margin: 0 0 1em 0;
+}
+
+strong {
+  color: #f5f5f5;
 }
 
 article {
@@ -200,7 +224,7 @@ ul.social.icons li {
 }
 
 #main>section {
-  border-top: solid 2px #c2d3f9;
+  border-top: solid 2px #efefef;
   margin: 4em 0.8em 0 0;
   padding: 4em 0 0 0;
   display: inline-block;
@@ -263,6 +287,7 @@ section, article {
   height: 14em;
   /*transition: .5s ease;*/
   backface-visibility: hidden;
+
 }
 
 .thumb {
@@ -279,6 +304,8 @@ section, article {
 
 .preview_container:hover .image {
   opacity: 0.6;
+
+
 }
 
 .preview_container:hover .thumb {
@@ -360,11 +387,11 @@ button {
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus, button:focus, button:hover {
-  border-color: #F6C90E;
+  border-color: var(--link-accent-color);
 }
 
 button:focus, button:hover {
-  color: #F6C90E;
+  color: var(--link-accent-color);
 }
 
 form {
