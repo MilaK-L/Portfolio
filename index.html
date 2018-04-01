@@ -10,12 +10,14 @@
 
 	<title>Mila K-L Front End Web Developer</title>
 	<link href="styles.css" rel="stylesheet">
+	<link href="responsive.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Hind:300,400,600|Quicksand:300,400,700|Work+Sans:300,400,600" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	<script src="jquery-3.3.1.js"></script>
 
 </head>
 
-<body>
+<body id="allContent">
 	<!-- Header -->
 	<header id="header">
 		<div>
@@ -150,7 +152,28 @@
 
 	</div>
 	<!-- Footer -->
+	<script>
 
+
+		var $window = $(window),
+
+			 $header = $("#header"),
+				 $footer = $("#footer"),
+					 $main = $("#main");
+
+
+
+		$(document).ready(function() {
+			if ($(window).width() <= 980) {
+				$footer.insertAfter($main);
+				console.log("Small screen");
+			} else {
+				$footer.appendTo($header);
+				console.log("Big screen");
+
+			}
+		});
+	</script>
 
 
 </body>
