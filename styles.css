@@ -266,7 +266,6 @@ ul.social.icons li {
 
 .contact {
   background-color: #669B7C;
-  /*flex-basis: content;*/
   align-items: flex-start;
 }
 
@@ -408,12 +407,14 @@ textarea {
 .get_in_touch {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 

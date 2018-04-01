@@ -19,7 +19,7 @@
 
 
   li .icon {
-    font-size: 1.25em;
+    font-size: 2em;
   }
   #header {
     left: auto;
@@ -39,29 +39,30 @@
     display: inline;
   }
   #footer {
-    display: flex;
+    display: inline-block;
     flex-direction: row;
     background: linear-gradient(45deg, #155799, #159957);
-    background-size: auto, cover;
+justify-content: center;
+align-items: flex-start;
     bottom: auto;
     left: auto;
-    padding: 4em 4em 6em 4em;
+    padding: 2em 2em 2em 2em;
     position: relative;
     text-align: center;
     width: 100%;
   }
   #footer .icon {
-    margin: 0 0 1em 0;
+    margin: 0 0 2em 0;
   }
   #footer .copyright {
-    margin: 0 0 1em 0;
+    margin: 0 0 2em 0;
   }
   #footer li {
-    border-left-width: 1px;
     display: inline-block;
     line-height: 1em;
     margin-left: 0.75em;
     padding-left: 0.75em;
+
   }
 
   #main {
@@ -76,7 +77,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 736px) {
 
   			#header {
   				padding: 2.25em 1.5em;
@@ -96,29 +97,37 @@
     flex-grow: 1;
   }
 
+}
+
+@media screen and (max-width: 480px) {
+
+form, input {
+  flex-grow: 1;
 
 }
 
-@media screen and (max-width: 360px) {
-
-
-
+textarea, input {
+  margin-bottom: 0.5em;
+}
 
   button {
     margin: 0 0 2em 0;
     display: block;
-    padding: 1em 0 0 0;
+    padding: 0;
     text-align: center;
     width: 100%;
   }
   #header {
-    padding: 4.5em 1.5em;
+    padding: 4em 1.5em;
   }
   #footer li {
-    border-left-width: 0;
-    display: block;
+    display: inline-block;
     line-height: 2.25em;
     margin-left: 0;
-    padding-left: 0;
+    padding-left: 1em;
+  }
+
+  li .icon {
+    font-size: 1.5em;
   }
 }
