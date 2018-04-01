@@ -22,17 +22,14 @@
     font-size: 1.25em;
   }
   #header {
-    display: block;
-    /*background-position: top left, center center;*/
-    background-size: auto, cover;
-    /*left: auto;*/
+    left: auto;
     padding: 6em 4em;
     position: relative;
     text-align: center;
     top: auto;
     min-width: 100%;
-    height: inherit;
-
+  min-height: inherit;
+  display: block;
 
   }
   #header h1 {
@@ -70,14 +67,43 @@
   #main {
 				margin: 0;
 				padding: 6em 4em;
-				width: 100%;
+				width: auto;
         height: auto;
 			}
+
+
+
+
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+  			#header {
+  				padding: 2.25em 1.5em;
+  			}
+
+
+              #main {
+				padding: 2.25em 1.5em 0 1.5em;
+			}
+
+				#main > section {
+					margin: 2.25em 0 0 0;
+					padding: 2.25em 0 0 0;
+				}
+
+  .project_item {
+    flex-grow: 1;
+  }
+
+
+}
 
 @media screen and (max-width: 360px) {
+
+
+
+
   button {
     margin: 0 0 2em 0;
     display: block;
