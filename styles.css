@@ -212,7 +212,7 @@ ul.social.icons li {
 }
 
 #main {
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
   /*min-height: auto;*/
   margin-left: 35%;

@@ -22,7 +22,7 @@
 	<header id="header">
 		<div>
 			<a href="#" class="profile photo"><img src="images/profile.jpg" alt="Profile photo"></a>
-			<h1>Hi! <strong>I am Mila</strong>,<br/> a Frond End Web Developer and Udacity Nanodegree student</h1>
+			<h1>Hi! <strong>I am Mila</strong>,<br/> a Frond End Web Developer making websites that drive results!</h1>
 		</div>
 		<footer id="footer">
 			<div class="footer wrapper">
@@ -45,10 +45,10 @@
 		<section class="about">
 			<h2>About me</h2>
 			<p>
-				Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by
-				their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life
-				One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+				Web developer with a strong focus on clean and beautiful visual design and smart UX. My curent skills include: semantic HTML, CSS, Flexbox, CSS Grid, JavaScript, jQuery. Additionally I have expertise in QA and Project Management. I've been granted a Google
+				Scholarship for Udacity Front End Nanodegree in 2017.
 			</p>
+			<button><a href="#feedback_form">Hire me</a></button>
 		</section>
 
 		<!-- Projects -->
@@ -153,17 +153,14 @@
 	</div>
 	<!-- Footer -->
 	<script>
-
-
 		var $window = $(window),
 
-			 $header = $("#header"),
-				 $footer = $("#footer"),
-					 $main = $("#main");
+			$header = $("#header"),
+			$footer = $("#footer"),
+			$main = $("#main");
 
 
-
-		$(document).ready(function() {
+		function checkSize() {
 			if ($(window).width() <= 980) {
 				$footer.insertAfter($main);
 				console.log("Small screen");
@@ -172,7 +169,10 @@
 				console.log("Big screen");
 
 			}
-		});
+		}
+		$(document).ready(checkSize());
+
+		window.onresize = checkSize;
 	</script>
 
 
