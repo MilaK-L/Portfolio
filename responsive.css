@@ -1,16 +1,10 @@
 /*Portfolio by Mila K-L */
-
 /*March 2018*/
 
 /*Breakpoints*/
 
-@media screen and (max-width: 1800px) {
-  body, input, select, textarea {
-    font-size: 12pt;
-  }
-}
-
 @media screen and (max-width: 980px) {
+
   #allContent {
     display: flex;
     flex-direction: column;
@@ -70,7 +64,9 @@
   }
 }
 
+
 @media screen and (max-width: 736px) {
+
   #header {
     padding: 2.25em 1.5em;
   }
@@ -86,7 +82,9 @@
   }
 }
 
+
 @media screen and (max-width: 480px) {
+  
   form, input {
     flex-grow: 1;
   }
