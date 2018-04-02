@@ -7,6 +7,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#159957">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#159957">
+	<meta name="description" content="Mila K-L, a Frond End Web Developer building websites that drive results!">
 
 	<title>Mila K-L Front End Web Developer</title>
 	<link href="styles.css" rel="stylesheet">
@@ -48,7 +51,7 @@
 				Web developer with a strong focus on clean and beautiful visual design and smart UX. My curent skills include: semantic HTML, CSS, Flexbox, CSS Grid, JavaScript, jQuery. Additionally I have expertise in QA and Project Management. I've been granted a Google
 				Scholarship for Udacity Front End Nanodegree in 2017.
 			</p>
-			<button><a href="#feedback_form">Hire me</a></button>
+			<a href="#feedback_form"><button>Hire me</button></a>
 		</section>
 
 		<!-- Projects -->
@@ -57,7 +60,7 @@
 			<div class="projects">
 				<article class="project_item">
 					<div class="preview_container">
-						<a href="#"><img src="images/project1.jpg" alt="Project preview" class="image">
+						<a href="https://milak-l.github.io/Pixel-Art-Maker-Udacity" target="_blank"><img src="images/project1.jpg" alt="Project preview" class="image">
 						 <div class="thumb">
 						    <div class="text">Learn more</div>
 						 </div>
@@ -72,7 +75,7 @@
 
 				<article class="project_item">
 					<div class="preview_container">
-						<a href="#"><img src="images/project2.jpg" alt="Project preview" class="image">
+						<a href="https://milak-l.github.io/Portfolio" target="_blank"><img src="images/project2.jpg" alt="Project preview" class="image">
 					  <div class="thumb">
 							 <div class="text">Learn more</div>
 					 </div>
@@ -128,7 +131,7 @@
 							<input type="text" name="name" placeholder="Your Name">
 							<input type="email" name="email" placeholder="Your Email">
 						</div>
-						<textarea name="message" placeholder="Your Message" row="7" wrap="soft"></textarea>
+						<textarea name="message" placeholder="Your Message" row="6" wrap="soft"></textarea>
 						<button>Send Message</button>
 					</div>
 				</form>
@@ -151,30 +154,8 @@
 		</section>
 
 	</div>
-	<!-- Footer -->
-	<script>
-		var $window = $(window),
-
-			$header = $("#header"),
-			$footer = $("#footer"),
-			$main = $("#main");
-
-
-		function checkSize() {
-			if ($(window).width() <= 980) {
-				$footer.insertAfter($main);
-				console.log("Small screen");
-			} else {
-				$footer.appendTo($header);
-				console.log("Big screen");
-
-			}
-		}
-		$(document).ready(checkSize());
-
-		window.onresize = checkSize;
-	</script>
-
+ <!-- Footer -->
+	<script src="scripts.js"></script>
 
 </body>
 

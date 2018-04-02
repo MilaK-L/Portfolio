@@ -11,13 +11,10 @@
 }
 
 @media screen and (max-width: 980px) {
-
   #allContent {
     display: flex;
     flex-direction: column;
   }
-
-
   li .icon {
     font-size: 2em;
   }
@@ -28,9 +25,8 @@
     text-align: center;
     top: auto;
     min-width: 100%;
-  min-height: inherit;
-  display: block;
-
+    min-height: inherit;
+    display: block;
   }
   #header h1 {
     font-size: 1.75em;
@@ -41,9 +37,9 @@
   #footer {
     display: inline-block;
     flex-direction: row;
-    background: linear-gradient(45deg, #155799, #159957);
-justify-content: center;
-align-items: flex-start;
+    background: linear-gradient(to right, #159957, #155799);
+    justify-content: space-around;
+    align-items: flex-start;
     bottom: auto;
     left: auto;
     padding: 2em 2em 2em 2em;
@@ -62,54 +58,41 @@ align-items: flex-start;
     line-height: 1em;
     margin-left: 0.75em;
     padding-left: 0.75em;
-
   }
-
+  #footer li:first-child {
+    padding-left: 0;
+  }
   #main {
-				margin: 0;
-				padding: 6em 4em;
-				width: auto;
-        height: auto;
-			}
-
-
-
-
+    margin: 0;
+    padding: 6em 4em;
+    width: auto;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 736px) {
-
-  			#header {
-  				padding: 2.25em 1.5em;
-  			}
-
-
-              #main {
-				padding: 2.25em 1.5em 0 1.5em;
-			}
-
-				#main > section {
-					margin: 2.25em 0 0 0;
-					padding: 2.25em 0 0 0;
-				}
-
+  #header {
+    padding: 2.25em 1.5em;
+  }
+  #main {
+    padding: 2.25em 1.5em 0 1.5em;
+  }
+  #main>section {
+    margin: 2.25em 0 0 0;
+    padding: 2.25em 0 0 0;
+  }
   .project_item {
     flex-grow: 1;
   }
-
 }
 
 @media screen and (max-width: 480px) {
-
-form, input {
-  flex-grow: 1;
-
-}
-
-textarea, input {
-  margin-bottom: 0.5em;
-}
-
+  form, input {
+    flex-grow: 1;
+  }
+  textarea, input {
+    margin-bottom: 0.5em;
+  }
   button {
     margin: 0 0 2em 0;
     display: block;
@@ -126,7 +109,6 @@ textarea, input {
     margin-left: 0;
     padding-left: 1em;
   }
-
   li .icon {
     font-size: 1.5em;
   }

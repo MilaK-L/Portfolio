@@ -216,10 +216,10 @@ ul.social.icons li {
   flex-direction: column;
   /*min-height: auto;*/
   margin-left: 35%;
-  /*max-width: 54em;*/
+  max-width: 74em;
   padding: 6em 3em 2em 0;
   width: calc(100% - 35%);
-  background-color: #FADC9E;
+  /*background-color: #FADC9E;*/
 }
 
 #main>section {
@@ -236,13 +236,13 @@ ul.social.icons li {
 }
 
 .about {
-  background-color: #C06C84;
+  /*background-color: #C06C84;*/
   /*flex-basis: content;*/
   align-items: flex-start;
 }
 
 .work {
-  background-color: #137083;
+  /*background-color: #137083;*/
   /*display: flex;*/
   flex-direction: column;
   flex: 1;
@@ -259,13 +259,13 @@ ul.social.icons li {
 }
 
 .project_item {
-  background-color: #dddddd;
+  /*background-color: #dddddd;*/
   flex-basis: calc(50% - 12px);
   min-width: 300px;
 }
 
 .contact {
-  background-color: #669B7C;
+  /*background-color: #669B7C;*/
   align-items: flex-start;
 }
 
@@ -401,7 +401,7 @@ textarea {
   padding: 0.75em;
   margin: 1em 2em 0 0;
   width: 100%;
-  min-height: 25vh;
+  min-height: 20vh;
 }
 
 .get_in_touch {
@@ -427,7 +427,7 @@ form {
 }
 
 .contact_info li {
-  display: inline-flex;
+  display: flex;
   margin: 0.5em 0 2em 0;
 }
 
