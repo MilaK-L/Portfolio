@@ -94,6 +94,10 @@ body {
 /* Main */
 
 a {
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   text-decoration: none;
   color: #a2a2a2;
 }
@@ -192,16 +196,22 @@ article>p {
 /* Project images*/
 
 .image {
+  -moz-transition: .5s ease;
+  -webkit-transition: .5s ease;
+  -ms-transition: .5s ease;
+  transition: .5s ease;
   border-radius: 0.35em;
   transition: opacity 0.2s ease-in-out;
   opacity: 1;
   width: 100%;
   height: auto;
-  transition: .5s ease;
   backface-visibility: hidden;
 }
 
 .thumb {
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
   opacity: 0;
   position: absolute;
@@ -238,6 +248,10 @@ article>p {
 }
 
 input, textarea, button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
   background-color: #f7f7f7;
   border: solid 2px transparent;
   border-radius: 0.35em;
@@ -253,7 +267,9 @@ input, textarea, button {
 }
 
 button {
-  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   background-color: transparent;
   border-radius: 0.35em;
