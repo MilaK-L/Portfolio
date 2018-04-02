@@ -14,10 +14,9 @@ var $window = $(window),
 function checkSize() {
   if ($(window).width() <= 980) {
     $footer.insertAfter($main);
-    console.log("Small screen");
+
   } else {
     $footer.appendTo($header);
-    console.log("Big screen");
 
   }
 }
